@@ -1,5 +1,9 @@
 # Edital CAU-TO: plataforma de estudos
 
+## Acesso
+
+**https://tiagocarvalhob.github.io/Plataforma-Cau-TO/**
+
 Plataforma de estudos para o concurso do **CAU-TO 2026, cargo 200: Assistente Administrativo** (Instituto Quadrix, prova objetiva de certo ou errado prevista para 13/12/2026).
 
 Ela organiza o edital verticalizado e liga cada assunto a aulas e vídeos de resolução de questões que já existem no YouTube. Não há conteúdo próprio: sem apostilas, resumos ou questões escritas pela plataforma.
