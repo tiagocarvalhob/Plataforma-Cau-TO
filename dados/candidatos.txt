@@ -1,0 +1,283 @@
+# topic | tipo(a=aula,q=questoes) | id | titulo
+pt1.1|a|PL:PL-4cMc9KcAt5HuK2LF1jrxBZXl6Jpeqa8|Curso Grátis de Interpretação de Textos para Concursos (Curso Completo)
+pt1.1|a|tDnUxMCQa9w|Compreensão e interpretação de texto para concurso público
+pt1.1|q|qDxCQMRemJE|SIMULADO: 25 QUESTÕES de Interpretação de Texto para Concursos
+pt1.2|a|h0CKy8IFxh4|TIPOS DE TEXTOS - Português para concurso público
+pt1.2|a|e3MHkMqIqiA|Figuras de linguagem mais usadas em concursos públicos
+pt1.2|a|jaoaZsx4LlM|DENOTAÇÃO e CONOTAÇÃO - Aula de Português para concurso
+pt1.2|q|seHDO4IM_ik|Exercícios de Denotação e Conotação [Prof Noslen]
+pt2.1|a|cQOl7Ejes00|ORTOGRAFIA OFICIAL: As palavras MAIS COBRADAS em concurso público
+pt2.1|a|PL:PL2EIbkbKtDXreiIeNcct3XFozE9Hpcn4C|Ortografia (playlist)
+pt2.1|q|4gGhcaxTORU|Sprint BB - 1080 Questões de Português: Ortografia oficial - Prof. Sidney
+pt2.2|a|MavYAYVFG1Y|SEMÂNTICA - sinônimos, antônimos, homônimos, parônimos, hipônimos e hiperônimos
+pt2.2|q|jXgaKQZDb_M|SINÔNIMO E ANTÔNIMO || Teoria + Questões de Concurso
+pt2.2|q|XqvZrKCGzMY|Exercícios de Sinônimos e Antônimos [Prof Noslen]
+pt2.3|a|ltrzPijgKi4|MORFOLOGIA: CLASSES DE PALAVRAS (Para Concurso)
+pt2.3|a|6zsVwix7Uh0|COLOCAÇÃO PRONOMINAL (Para Concurso)
+pt2.3|q|YYpUr9Fglnw|Questões de Português para Concurso - COLOCAÇÃO PRONOMINAL 04
+pt2.3|q|mBUFd7NiZUI|COLOCAÇÃO PRONOMINAL EXERCÍCIOS [PRÓCLISE, ÊNCLISE e MESÓCLISE]
+pt3.1|a|MW3h3hBPFaA|Coesão e Coerência Textual para Concursos
+pt3.1|q|60wyY63Lz0k|Aula completa sobre COESÃO TEXTUAL (teoria e questões)
+pt3.1|q|RifqY0IbX-o|Coesão e coerência: questão do concurso INSS
+pt3.2|a|XmUcCeTtNjA|Português para concursos - Emprego de tempos e modos verbais
+pt3.2|q|ColPQ-LbfOc|Português para Concursos: Exercícios sobre tempos verbais
+pt4.2|a|-3_yHhrjHwI|Período Composto por Coordenação e Subordinação
+pt4.2|q|sGW6H8Vvj9k|Período Composto Coordenado e Subordinado - 50 questões resolvidas
+pt4.2|q|QTYs8ivsdtk|Exercícios - Período Composto por Coordenação [Prof Noslen]
+pt1.1|a|eK2r1EtI7Pc|INTERPRETAÇÃO DE TEXTOS MULTIMODAIS
+pt1.1|q|yOYx5Y3ZSkc|Gabarite Português com Questões da Banca Quadrix
+pt4.1|a|O3qlLiqtMko|Termos da Oração: português para concurso público
+pt4.1|a|WZwRBcuf4hQ|SINTAXE - Entenda de uma vez por todas!
+pt4.1|q|QmyXBvKD43o|Exercícios de Análise Período Simples I [Prof Noslen]
+pt4.1|q|kWMOM2Rqu0Y|Predicado verbal, nominal ou verbo-nominal? Exercícios resolvidos
+pt4.3|a|qFYxm6HrNrM|CONCORDÂNCIA verbal e nominal para CONCURSOS PUBLICOS
+pt4.3|q|kFVQOkfV9sk|QUESTÕES COMENTADAS de CONCORDÂNCIA VERBAL e NOMINAL [Prof. Eliane Vieira]
+pt4.3|q|Eh5y8RmVZTc|50 Questões - Concordância Verbal e Nominal
+pt4.4|a|Ul6rogRczCs|Regência Verbal e Nominal - Aprenda a teoria e acerte as questões!
+pt4.4|q|Choc_tA8VZ0|Regência Verbal e Nominal para Concursos: Resolução Prática de Questões
+pt5.1|a|G8Stjzy-87k|PONTUAÇÃO - Aulão completo para Concurso Público!
+pt5.1|q|lCs5qIgI0fs|VÍRGULA - questões comentadas
+pt5.1|q|S0dmQR6hpPE|Uso da Vírgula - Regras mais cobradas em CONCURSO (Teoria + Questões)
+pt6.1|a|_ra-w5CDYKU|CONCURSO PRF 16 - REESCRITA DE FRASES E PARÁGRAFOS DO TEXTO
+pt6.1|a|AkFloAZTgBU|Reescrita de frases Cespe concursos
+pt6.1|q|ujcuC7AYs1Q|CEBRASPE - Aula de Português - Reescrita de Frase
+pt6.2|a|4fwggl7euJ8|Aula #038 - Variação linguística para concursos
+pt6.2|q|jtOIaaO69jQ|Variações linguísticas e níveis de linguagem (Exercícios comentados)
+pt6.2|q|slm1ezQHYW8|Questões Resolvidas sobre Variação Linguística - Profª Aline
+pt4.4|a|5uMooAjtVis|CRASE - As 6 regras mais cobradas em CONCURSO (Teoria + Questões)
+pt4.4|q|JBALZYWrOXg|CRASE para CONCURSOS: QUESTÕES COMENTADAS CESPE [Prof Eliane Vieira]
+pt4.4|q|Ha8bpJmj76E|TESTE de Português! Questões sobre CRASE (banca CESPE/CEBRASPE) || Prof. Letícia Góes
+mt1.1|a|gzgdcOPIbaQ|Detone CONJUNTOS NUMÉRICOS em Concursos Públicos - Parte 1
+mt1.1|a|KLXlIE4yjVE|Conjuntos Numéricos – Matemática CESPE
+mt1.1|q|MSKYNFVpFzU|CONJUNTOS NUMÉRICOS EXERCÍCIOS RESOLVIDOS - AULA #02 de 5
+mt1.1|q|auu85p4Ae4k|3 QUESTÕES DE CONCURSO - Conjuntos Numéricos e Raciocínio Lógico
+mt1.2|a|PL:PL83s8LGM84J6WJEehPWCg3svyNm_ZaJ_P|PROPORCIONALIDADE: Razão, Proporção, Regra de Três, Porcentagem (playlist)
+mt1.2|a|aCjc5HAy3_M|Matemática básica - Razão, proporção, regra de três e porcentagem
+mt1.2|q|u2sFZvVIyt0|REGRA DE TRÊS COMPOSTA - CONJUNTOS - PORCENTAGEM - BANCA IDECAN
+mt1.2|q|qwjXCnlPcJU|Regra de três simples com porcentagem - questão de concurso
+mt1.3|a|tfm9kUrO5GI|RESUMO EQUAÇÃO 1º E 2º GRAU
+mt1.3|a|5PqAfrXDl1Q|Vunesp - Funções polinomiais do 1º e 2º graus
+mt1.3|q|M2OwYlXS1ss|Matemática para Concursos: Função do Primeiro Grau em Exercícios
+mt1.3|q|6p_yCjLwywk|FUNÇÕES DO 1° E DO 2° GRAU - PROBLEMA DE MATEMÁTICA - Com prof. Cristiano
+mt1.4|a|pUQMxxvGDtc|PA e PG - Progressões Aritmética e Geométrica
+mt1.4|q|oLcvsEBNQs8|Questões de P.A. e P.G. da Cesgranrio para o concurso do Banco do Brasil de 2021
+mt1.4|q|wPB7riMEUbY|Progressão Aritmética PA: Questões Comentadas - Parte 1
+mt2.1|a|MATXg_WjvUI|PERMUTAÇÃO, ARRANJO OU COMBINAÇÃO? Aprenda a diferença de uma vez por todas!
+mt2.1|a|PL:PL2LjluFc7IYYnjyEOCJBTRLHB4FqOpYDm|Análise Combinatória e Probabilidade — Permutação, Arranjo e Combinação (playlist)
+mt2.1|q|vKJT9Ot7-lw|ANÁLISE COMBINATORIA E RESOLUÇÃO DE 19 PROBLEMAS
+mt2.1|q|2Zaa1EhbuTo|QUESTÕES DA BANCA INSTITUTO AOCP - ANÁLISE COMBINATÓRIA
+mt2.2|q|pDFw0IFtJz4|Questões de Probabilidade - Aula de Raciocínio Lógico para Concurso
+mt2.2|q|oiQfucO6L6o|PROBABILIDADE (60 QUESTÕES)
+mt2.2|q|UzK3oHJqlMA|Questões de Probabilidade para Concursos
+mt3.1|a|zxNE4kIMdo8|Lógica de Argumentação para Concursos
+mt3.1|a|jlKUjvRFYws|MÉTODOS DE INFERÊNCIA LÓGICA (DEDUÇÃO, INDUÇÃO E ABDUÇÃO)
+mt3.1|q|nztbAk0wknY|LÓGICA DE ARGUMENTAÇÃO EM EXERCÍCIOS [RACIOCÍNIO LÓGICO PARA CONCURSOS]
+mt3.2|a|e9RcWo5Zlr8|Aula de Raciocínio Lógico - Lógica de Argumentação e Diagramas Lógicos
+mt2.2|a|yuM-CuZIt1I|Domine Probabilidade em Raciocínio Lógico para concursos - Parte 1
+mt3.2|a|zr7vjCc6o3Y|QUANTIFICADORES LÓGICOS: Todo, Nenhum, Existe, Algum
+mt3.2|q|Znog7DacX84|Raciocínio Lógico para Concursos: Diagramas Lógicos em Exercícios
+mt3.2|q|_7b-FjvOChk|RESOLVENDO QUESTÕES #12 - Diagramas Lógicos (FCC)
+mt3.3|a|p6_HZzFegM8|Proposições e Conectivos Lógicos
+mt3.3|a|1A0JSFJOMAo|Tabela Verdade - Aula completa para concursos
+mt3.3|q|KXm8Hi-I_G0|RACIOCÍNIO LÓGICO - PROPOSIÇÕES E TABELA VERDADE - Professora Angela Matemática
+mt4.1|a|-CKyLMxOF8o|Aula de Sequências de números, figuras, letras e palavras (Raciocínio Lógico) - Parte 1
+mt4.1|a|W2aFL3pKqfU|Raciocínio Lógico: Sequências envolvendo números, figuras e palavras
+mt4.1|q|oztKXOtGiCo|SEQUÊNCIAS NUMÉRICAS EM EXERCÍCIOS [RACIOCÍNIO LÓGICO PARA CONCURSOS]
+mt4.1|q|iEXNoo0c19g|Como acertar questões de Sequências Envolvendo Números, Letras e Figuras
+mt4.2|a|5tutwDvSE-0|Raciocínio Lógico - Orientação Espacial
+mt4.2|a|W7zzqCGMg-Y|Como acertar as questões de: ORIENTAÇÃO TEMPORAL em provas de RLM
+mt4.2|q|KQHoFw5fjxQ|Orientação Espacial e Temporal: questões de Raciocínio Lógico
+mt4.2|q|j-FfERGsjfY|ORIENTAÇÃO ESPACIAL: DICAS E QUESTÕES RESPONDIDAS
+mt5.1|a|5mpXfknJiks|MÉDIA, MODA E MEDIANA
+mt5.1|q|PL:PLFYsZqiaMzFswB9fYpmZY2QLkhEtCC3hD|MÉDIA, MEDIANA e MODA :: Questões de Estatística de Concursos Públicos (playlist)
+mt5.1|q|zGNpz19nS2s|Questões de concursos estatística (média, moda e mediana)
+mt5.2|a|08nWMuEZFpQ|Saiba como Analisar e Interpretar Gráficos em Concursos Públicos
+mt5.2|a|BsU7KBH4-yQ|Interpretação de Gráficos e Tabelas - Aula 1
+mt6.1|a|PL:PL5msh3pcENgSyCmN_CtzxFs4_tLVyQ9iA|Juros simples e compostos (playlist)
+mt6.1|q|CFvH0mdJzhM|Juros Simples e Juros Compostos (EXERCÍCIOS RESOLVIDOS)
+mt6.1|q|5BieKvEVn0Y|Exercícios resolvidos de JUROS SIMPLES para concursos
+mt6.1|q|LST_8vSAodo|AULA DE JUROS COMPOSTOS COM QUESTÕES RESOLVIDAS DA BANCA CESGRANRIO
+mt6.2|a|v9oaOMDI6C8|Aula de Desconto simples e cálculo de taxa efetiva (Matemática Financeira)
+mt6.2|a|JzbFoVBq6h0|TAXAS (nominal, proporcional, efetiva, equivalente, aparente e real)
+mt6.2|q|_hwWT0U-tuo|Concurso BNB - Taxas de juros: nominal, efetiva, equivalentes, proporcionais, real e aparente
+mt5.2|q|Wszdx006-_U|GRÁFICOS E TABELAS - EXERCÍCIOS RESOLVIDOS
+mt5.2|q|LaE4g_y_e8o|Vunesp - Questões sobre gráficos e tabelas
+mt6.2|q|hgHjclFnJm4|Desconto Comercial Simples e Desconto Racional Simples - Questões da FCC
+mt6.2|q|XKEU2uyAooQ|DESCONTO COMERCIAL SIMPLES - EXERCÍCIOS RESOLVIDOS - PARTE I
+in1.1|a|YrDLtdP4LI4|Informática para Concursos - Hardware, software e periféricos
+in1.1|q|I6VWA0QvdjE|Questões de Informática para Concursos - Hardware e Software #01
+in1.1|q|rqISJv-HQ84|Questões de Informática para Concursos - Hardware #02
+in2.1|a|PL:PLoV8oI6--TjW-6pdeJrbLkxdXN0DByYW-|Microsoft Office 365 - Informática para concursos (playlist)
+in2.1|a|OzusoJkiaWk|TRT1 e TRT15 - Informática (teoria 08 de 20) Google Workspace - Planilhas
+in2.1|q|KJTCwgzvnhA|Questões de Informática - Microsoft Office - Concurso Colégio Pedro II
+in2.1|q|S4p8QsbunT0|InforQuiz: Google Workspace
+in2.2|a|zI7L1yM3lkg|Informática para concursos: MS Teams e Google Meet para Vunesp
+in2.2|a|72H-liLG1tw|Informática para concursos - Microsoft Teams - Aula completa
+in3.1|a|9Ua5AgeL2fc|Windows 11 para concursos 2024 - Aula 1 de informática
+in3.1|a|xRoE32ck6V8|Windows 10 para concursos 2020 - Aula 1 de informática
+in3.1|q|xe_yFuL8594|InforQuiz: O Windows 11 na sua prova!
+in3.1|q|8SmLcUatOmA|Questões de Informática para Concursos - Sistemas Operacionais
+in3.2|a|YzF7XoI-YjY|Todos os Sistemas Operacionais Mobile Explicados em 14 Minutos (canal geral, não de concurso)
+in4.1|a|6G_onNf0IMc|Informática para Concursos - Aula 03.01 - Internet x Intranet x Extranet - Internet
+in4.1|a|8VeJYDIBqME|Informática para Concursos - Aula 03.02 - Internet x Intranet x Extranet - Intranet
+in4.1|a|zs-fW7os6lM|Curso básico de informática pra concursos - REDES e INTERNET
+in4.1|q|DXGB3fMj-CM|Questões Internet e Intranet para concurso público
+in4.1|q|eKDZ2YLNNt0|QUESTÕES DE INTERNET, INTRANET E EXTRANET PARTE I
+in4.2|a|awlDxCI56rw|NAVEGADORES: Internet Explorer, Edge, Firefox e Chrome (para concursos)
+in4.2|a|STDeZe68aS8|Informática para Concursos - Navegadores da Internet - Rodrigo Schaeffer
+in4.2|q|RL3JOvfa0s8|Questões de concursos Navegadores de Internet
+in4.2|q|HyPCl2CURlU|Questões Navegadores de Internet
+in4.3|a|be7hyy8O9eM|Correio Eletrônico para Concursos 2019
+in4.3|q|XXL3VxeQe8I|Informática Para Concursos/ Correio Eletrônico/Questões de Informática
+in5.1|a|ROFLADXnTVM|GERENCIAMENTO DE ARQUIVOS E PASTAS (WINDOWS) - Prof. Vinícius Gnandt
+in5.1|a|XyL9hK0OrWM|Conceitos de organização e gerenciamento de arquivos, pastas e programas
+in5.2|a|-ILLZokFGkM|Informática para Concursos - Aula 05.04 - Computação em Nuvem - Armazenamento em Nuvem
+in5.2|a|1Mchw-saMQ0|Informática para SES-RS: Google Drive e OneDrive
+in5.2|a|bJ3p5uHqihU|OneDrive para Concursos: Tudo o que Você Precisa Saber para a Prova!
+in5.3|a|K2aUdyJpd8k|Segurança da informação para concursos - #1 - Rodrigo Schaeffer
+in5.3|a|1tVxzd7id7A|Informática para Concursos Malware e Vírus
+in5.3|a|VzIgfynqo2U|Aplicativos para segurança (antivírus, firewall, anti-spyware e VPN)
+in5.3|q|YJDk67f4R0c|Questões FCC Informática Concursos # 3 - Rodrigo Schaeffer - Segurança Malware e Vírus
+in5.3|q|TJ9DcuPJ664|50 questões de informática (parte 3 de 5) - Segurança, Malware e Antivírus
+in5.3|q|yM72scyN8Xs|Inforquiz: Questões de MALWARES com Fabrício Melo
+in5.4|a|S7B8H_CuOvU|Informática para Concursos: Domine BACKUP (Completo, Incremental e Diferencial)
+in5.4|q|TAr5W4BSoyo|Questões de Concurso - Backup
+in5.4|q|IaO42fDKxKI|Questão comentada sobre Backup para concursos
+in6.1|a|6VKYvArtIWo|INFORMÁTICA PRF // TEMA: INTELIGÊNCIA ARTIFICIAL + QUESTÕES
+in6.1|a|e3rQ373LnC0|Computação em Nuvem (Cloud Computing)
+in6.1|q|Jtv7ko4keRA|InforQuiz: Inteligência Artificial com Fabrício Melo
+in6.1|q|T-KvfoeIk1o|Questões de concurso sobre Inteligência Artificial
+in6.1|q|vsncwPpt97M|Computação em Nuvem - Questões Comentadas CESPE/CEBRASPE
+in6.1|q|NCH9bLJUCC8|InforQuiz: Questões de Nuvem computacional!
+in2.1|q|yN5BcCsgjEw|Questões de Informática para Concursos - Excel #01
+in2.1|q|SRq2JNKe2-c|Excel - Questões de concurso #1 - Simulado comentado
+lg1.1|a|qjkR6ohgOx8|CURSO COMPLETO DE ÉTICA NO SERVIÇO PÚBLICO - AULA 1 - Professor Franco - Teoria + Questões
+lg1.1|q|-wyOyYPwdgs|Ética no Serviço Público CESPE: Questões Comentadas com Gabarito
+lg1.1|q|amuAKeHdWzU|Questões sobre ÉTICA NO SERVIÇO PUBLICO da Banca CEBRASPE / CESPE
+lg1.1|q|KknSSXI3ECQ|SIMULADO 15 Questões de Ética no Serviço Público
+lg1.2|a|YDu8Ftky404|Direito Administrativo: Princípios da Administração Pública — LIMPE
+lg1.2|a|9tISEeB0XvU|Princípios expressos da administração pública: LIMPE
+lg1.2|q|Nq-3mzC_aQs|20 Questões sobre Princípios da Administração Pública - LIMPE
+lg1.2|q|9OxmIDYBOGM|Questões para Concurso - Princípios da Administração Pública LIMPE
+lg1.2|q|8xZQ2ZaCTog|30 QUESTÕES - PRINCÍPIOS IMPLÍCITOS DA ADMINISTRAÇÃO PÚBLICA
+lg2.1|a|VwwNpee93z4|IMPROBIDADE ADMINISTRATIVA - AULA COMPLETA E RESUMIDA - LEI 8.429/1992
+lg2.1|a|cTJdXALKpm4|Concurso PCDF Administrativo: Entenda de uma vez a Lei 8.429/1992
+lg2.1|a|dJ9f4ME-sdI|Nova Lei de Improbidade (Lei 14230/2021) - Saiba o que mudou
+lg2.1|q|UBrNfDtb4bo|Lei de improbidade administrativa (8.429/1992; 14.230/2021) (Questão 10) - CESPE/CEBRASPE
+lg3.1|a|GZ8FSzQK9Y0|LEI 9.784/99 - PROCESSO ADMINISTRATIVO FEDERAL - RIDISON LUCAS - PHD CONCURSOS
+lg3.1|a|PL:PL3zeY6-CKRVNJq6V8I_ydbgNsZjTAlK7b|Processo Administrativo Federal - Lei 9.784 (playlist)
+lg3.1|q|2JTAljCqOZw|Resolução de Questões Quadrix - Creci BA - Do Processo Administrativo Lei nº 9.784/1999
+lg3.1|q|X7PaoZlmKh4|30 Questões - Processo Administrativo - Lei nº 9.784/1999 - Banca CESPE/CEBRASPE
+lg3.1|q|Yq4-Fso3wyM|50 Questões - Processo Administrativo - Lei nº 9.784 de 1999
+lg3.1|q|ZVlJ-oTQ6Do|LEI 9.784/99 - Processo Administrativo Curso de 80 Questões Comentadas
+lg2.1|q|QJ-DhNXS2H0|SIMULADO 15 Questões Lei 8.429/1992 - Improbidade Administrativa
+lg2.1|q|R_Ac6l9H1_o|Concurso INSS 2024 Questões Nova Lei de Improbidade
+lg2.1|q|x5tn8P3vpWw|CONCURSO PF ADMINISTRATIVO 2025: QUESTÕES COMENTADAS LEI DE IMPROBIDADE
+lg4.1|a|kdj7QA1z5ms|Aula Completa - Lei 12.527/2011 (Lei de Acesso à Informação)
+lg4.1|a|IehmYR-by_8|ACESSO À INFORMAÇÃO LEI 12.527/2011 - ROBNEI STEFANES - PHDCONCURSOS
+lg4.1|a|PL:PLq_dTqrrG6QIpaEuwyGw4WnKT8A2EkLT7|Decreto 7.724/2012 - Regulamenta a Lei de Acesso a Informações (playlist)
+lg4.1|q|MjgF9_jnkpk|LEI DE ACESSO À INFORMAÇÃO: lei 12.527/11 Comentando os Artigos e MUITAS Questões I bloco 7 CNU 2024
+lg4.1|q|LmganMsFq1M|1 - Questões Comentadas sobre o Decreto 7.724/2012 Regulamenta a LAI
+lg4.1|q|u7WCZyNFqfk|Lei de Acesso à Informação - Lei 12.527/2011 - Resolução de Questões
+lg4.1|q|ZIv0Izyq_oE|30 QUESTÕES - LEI DE ACESSO À INFORMAÇÃO - LEI 12.527/11
+lg5.1|a|XbuniaIh_Tc|Lei nº 13.709 de 2018 - Lei Geral de Proteção de Dados (LGPD) - Conceitos e Características
+lg5.1|a|XhgJ7GxzrNI|Lei nº 13.709/2018 - Lei Geral de Proteção de Dados (LGPD) - [Técnico Legislativo]
+lg5.1|q|hmiX2T9yiLk|MARATONA CEBRASPE - LEI 13.709/2018 - PROTEÇÃO DE DADOS PESSOAIS
+lg5.1|q|HzllLB6X7jY|30 QUESTÕES - LGPD - LEI GERAL DE PROTEÇÃO DE DADOS PESSOAIS - LEI 13.709/18
+lg5.1|q|cBDxtCi0JuM|Lei Geral de Proteção de Dados - Questões Comentadas
+lg6|a|oocj-u0INMk|RESUMO COMPLETO DA LEI 12 378/2010 DO CAU BR!!!!
+lg6|a|InPuLl_VbA4|Concurso CAU/RJ - Revisão Final - Lei Federal nº 12.378/2010
+lg6|q|1wLdsLM94gE|Questões comentadas sobre a Lei 12.378/2010 para concursos do CAU/BR - CORREÇÃO
+lg6|q|4uLzwgg22-g|RESOLVENDO QUESTÕES DE CONCURSOS: LEI 12 378/2010
+es1.1|a|X9j2xGTELbs|Funções Administrativas: Planejamento, Organização, Direção e Controle
+es1.1|a|hT_izHC4zA0|AULA 01 - FUNÇÕES DA ADMINISTRAÇÃO (ASSISTENTE EM ADMINISTRAÇÃO) UFAL 2024
+es1.1|q|2OOjjLcQvdI|CICLO PODC - BANCA QUADRIX - Questões comentadas
+es1.1|q|ZClDkbYdQXI|QUESTÕES FGV - PROCESSO ADMINISTRATIVO (PODC) - ASSISTENTE TÉCNICO ADMINISTRATIVO - ALEAM
+es1.1|q|tbwS_rhBLEM|Questões Comentadas - Ciclo PODC - Departamentalização Instituto AOCP
+es1.2|a|fW-6t2jvsYc|Noções de Administração Financeira para Concursos - Bancas Consulplan e Instituto AOCP
+es1.2|a|2fBypccQLCo|Gestão de Pessoas - Adm de Recursos Humanos - Conceitos Básicos
+es1.2|a|WSzViE4JOy8|01. Aula de Noções de Administração de Materiais (Administração de Recursos Materiais)
+es1.2|q|tFJyU00h4ZA|100 Questões de Gestão de Pessoas para Concurso
+es1.2|q|1ki-nR-q54c|15 Questões CESPE/CEBRASPE de Administração de Recursos Materiais
+es1.2|q|13nXXxlAyGQ|AFO EM QUESTÕES - ADMINISTRAÇÃO FINANCEIRA e ORÇAMENTÁRIA (AFO) para CONCURSOS - Professor Franco
+es1.3|a|hzNA0EgMETg|09.02.05. Aula de Formulários e Manuais Administrativos (Administração)
+es1.4|a|gnc0fm50eUA|09.02.01. Aula de Noções introdutórias de OSM (Administração)
+es1.4|a|CwTpDUWYvPE|Aula 06 Organização, Sistemas e Métodos Professor Reginaldo Magalhães
+es1.5|a|dHoegcRIJfc|03.01. Aula de Noções de Gestão de Estoques (Administração de Recursos Materiais)
+es1.5|q|6ca4VjuihFY|Resolva Questões de Administração de Recursos Materiais PARTE 01
+es1.5|q|JxJGIX25xAg|Administração de Recursos Materiais - Questões FGV - Aula 3 - Prof Raphael Nardelli
+es1.3|a|veQxDB7VXhU|01 - Concurso Cremesp - Oficial Administrativo - Aula sobre Rotinas Administrativas
+es1.3|q|a9asjyDpZkc|CONCURSO SEE-AC - Questões de Rotinas Administrativas (Apoio Administrativo Educacional)
+es1.4|q|j1gBbcti3o4|GESTÃO DE PROCESSOS - Organograma e fluxograma - QUADRIX - Questões comentadas e Teoria
+es2.1|a|iE5a4Zq0YG0|TIPOS DE ORGANIZAÇÃO: LINEAR, FUNCIONAL, LINHA-STAFF, DIVISIONAL, POR PROJETOS, MATRICIAL E EM REDE
+es2.1|a|MclhVhzw0R4|Estrutura Organizacional - Conceitos básicos - Organização Administrativa
+es2.1|q|0uf7E-O2HY0|Avançado de Questões FGV - Aula 11 - Organização, Estrutura Organizacional e Departamentalização
+es2.1|q|XIrv2fyy8WE|Estrutura Organizacional (Questão 4) - Fundação Getúlio Vargas (FGV)
+es2.2|a|SrhCNA9iADs|03 - Concurso Cremesp - Oficial Administrativo - Aula sobre Relações Humanas
+es2.2|a|131gUL4B8ls|Aula 08 - Relações Humanas - Motivação - Concurso UFPB - Assistente em Administração
+es2.2|q|xJVTe-VObkQ|Relacionamento Interpessoal: Questões de Concursos
+es2.3|a|39yYulYHnBQ|Grupos e Equipes - Aula Completa - Administração para Concursos - Parte 1
+es2.3|a|cyfNUO4pTvc|Grupos e Equipes - Aula Completa - Administração para Concursos - Parte 2
+es2.3|q|Cu2AgNgUfik|Trabalho em Equipe - Teoria e Exercícios - Petronio Castro
+es2.3|q|023se8YLjlk|Questões UFPI/COPESE - Equipes e Grupos de Trabalho - Petronio Castro
+es2.4|a|bKPFECu9zds|DICAS EBSERH - AOCP - Noções de cidadania - Assistente Administrativo - Petronio Castro
+es2.4|q|Nl-Q6RmHAdw|Questões de Concurso RELAÇÕES PÚBLICAS
+es3.1|a|-G1jhqZ7qW8|Comunicação Organizacional - Aula Completa - Prof. Rodrigo Rennó
+es3.1|a|H1Yl19DIOgQ|Comunicação Interna e Externa - Administração para Traumatizados - Aula 63
+es3.1|q|z2YNrjBrqjg|Avançado de Questões FGV - Aula 15 - Administração Geral: Comunicação
+es3.2|a|PU0016nQ2js|AULA 3 - REDAÇÃO OFICIAL PARA CONCURSOS - Manual de Redação da Presidência da República - Princípios
+es3.2|a|sl1AW-mIGfI|Aula Grátis: Redação Oficial para Concursos - Tudo que você precisa saber - Prof Patrícia Sobral
+es3.2|q|eZ5hFD0FpR8|60 Questões - Manual de Redação Oficial da Presidência da República
+es3.2|q|FgEcDMOB6U8|100 Questões Manual de Redação Oficial da Presidência da República
+es3.2|q|VczVTnxkgBU|AULÃO DE REDAÇÃO OFICIAL - RESOLUÇÃO DE QUESTÕES - PROFESSORA GRASIELA CABRAL
+es2.4|a|tzNzaTNUXZQ|Relações Públicas - Comunicação organizacional e comunicação pública
+es2.4|q|Qmq0lI3U0EY|Revisão ALMG 2023 [Questões de Relações Públicas] - Banca FUMARC
+es3.3|a|Z0Qj84CgfLA|Documentos institucionais ATA, Ofício, circular e memorando
+es3.3|a|4ehG4c9YwWo|Manual de Redação Oficial, Padrão Ofício, Concurso Público
+es3.4|a|cB14o_u_ows|Administração: Arquivologia - Protocolo
+es3.4|a|uzJKOfOqx-A|Gestão Documental - Noções de Protocolo
+es3.4|q|91FbgNMgkkk|EXERCÍCIOS - PROTOCOLO - CESPE - ARQUIVOLOGIA
+es3.5|a|yQlOOxOpWuA|Aula 09 - Protocolo, Expedição, Destinação - Arquivologia - Valentini
+es3.5|a|hZ3NLVfwau4|Correspondência Oficial para concursos - PF
+es4.1|a|LMCRKa_MssU|17.08. Aula de Qualidade no atendimento ao público (Administração)
+es4.1|a|8NoLB5hFmV8|Concurso CRMV RO - Auxiliar Administrativo - Aula de Atendimento ao Público - AlfaCon
+es4.1|q|PemV640EQz0|SIMULADO 15 Questões de Atendimento ao Público para Concurso Público
+es4.1|q|Sf6r2byc44A|Questões sobre Atendimento ao Público - Banca FGV
+es4.1|q|jlZGMkAJXpw|Concurso CONAB - 10 Questões de atendimento ao público
+es4.2|a|_8iq5-VZcoE|Concurso TCM SP - Aula sobre Atendimento com Qualidade
+es4.3|a|N7zbu8-NGM0|Aula 01 - Atendimento Telefônico - Concurso Câmara SJC - Auxiliar Legislativo
+es4.3|a|O5Hb3PrHcL8|Aula 02 - Atendimento Telefônico - Concurso Câmara SJC - Auxiliar Legislativo
+es4.3|a|QKVANladZHI|Boas práticas de atendimento ao público e de atendimento telefônico
+es4.4|a|de0Pl6MyA-c|Atos de Ofício - Aula 56 (Atendimento ao Público Interno e Externo)
+es4.4|a|12wDnAGZ0yY|Aula 03 Atendimento ao cliente interno e externo
+es4.4|q|RzuLChI7mg4|Questões sobre Atendimento ao Público 2019
+es5.1|a|pzcSurcBQ6c|Concurso UFMT 2017 - Relacionamento Interpessoal - 07/30
+es5.2|a|I64DpLG31BU|Relacionamento Interpessoal - SEDUC-MT - 53/70
+es5.2|q|xJVTe-VObkQ|Relacionamento Interpessoal: Questões de Concursos
+es5.3|a|ru8xB0_YmKw|Trabalho em equipe - Gestão de Pessoas para concursos Públicos
+es5.3|q|_H11j8dEanI|Questões sobre Eficiência e funcionamento de Grupos / Trabalho em Equipe - Banca FGV
+es6.1|a|mdwyjDcsjyA|Arquivologia para Concursos (Noções) - Prof. Marco Antonio
+es6.1|a|vG5wk_jobrQ|Teoria das 3 idades - Arquivologia para concursos - André Sandes
+es6.1|a|BuFuHsOBTvo|Aula 01 - Conceitos Básicos de Arquivologia
+es6.2|a|YVUN_WSt9Sc|Arquivologia - Métodos de Arquivamento - Parte 1
+es6.2|a|sZLhEmtHGpE|Arquivologia - Métodos de Arquivamento - Parte 2
+es6.2|a|mL0NA0ZWYFY|ARQUIVOLOGIA - VÍDEO AULA 9 - MÉTODOS DE ARQUIVAMENTO
+es6.3|a|Wjh4rWD37p4|07.03. Gestão Eletrônica de Documentos (GED) (Arquivologia) Prof.ª Izabel Ataíde
+es6.3|a|6EmcC68u8h8|Aula 24 - Automação de Arquivos - Ged, Digitalização e Doc. digitais - Valentini
+es6.4|a|q4-6Ctuv2nU|06.03. Lei nº 12.682-2012 Arquivamento em Meios Eletromagnéticos (Arquivologia) Prof.ª Izabel Ataíde
+es6.4|a|CXuxLhog7rM|Decreto 10.278 de 18.03.2020 (Digitalização e descarte de documentos originais)
+es6.1|q|6qLIhGksFWY|Questões 1 - Arquivologia para concursos - André Sandes
+es6.1|q|L4_3niCg0iU|Questões de Arquivologia CESPE/Cebraspe com Gabarito Comentado!
+es6.1|q|kTlHgAIgTeQ|15 Questões COMENTADAS do CEBRASPE de Arquivologia
+es6.2|q|IKRWo2jybMM|50 Questões de Arquivologia para Concurso
+es6.2|q|Swca5WeD4EA|Aulão de Arquivologia (SÓ QUESTÕES)
+es6.2|q|ItQd2zo_Z10|Concurso PRF Administrativo 2025: Questões Comentadas Arquivologia
+es6.3|q|xFT8eBE-kBQ|Vídeo 01 - Questões Comentadas de Arquivologia - Prof. Renato Valentini
+pt1.2|q|mExFSOuxuAU|Questões para Concurso Público: Figuras de Linguagem
+pt1.2|q|3KL8tUOnYLI|SUPER SIMULADO I FIGURAS DE LINGUAGEM
+in4.3|a|kO7kwla_-4I|Outlook para Concursos: Dicas e Questão Comentada de Correio Eletrônico
+in4.3|q|zJv-Cw6L4ZE|Correio Eletrônico TJ: QUESTÕES DECISIVAS!
+in5.2|q|ugdrPzuHZv0|Bloco 01: Computação em nuvem Questões Comentadas de Informática para Concurso Público
+in5.2|q|ddTh-x54LiY|Vamos conversar sobre OneDrive? Questões aplicadas pela Vunesp nas Provas do TJ SP
+es3.2|a|xCYU6uraJBI|AULA 4 - REDAÇÃO OFICIAL PARA CONCURSOS - Manual de Redação da Presidência - Pronomes
+es3.3|a|bpFEDtnzzXY|[ADM] Redação Oficial - Padrão Ofício

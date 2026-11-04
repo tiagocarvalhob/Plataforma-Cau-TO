@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Edital CAU-TO</title>
+<meta name="description" content="Edital verticalizado do concurso CAU-TO 2026 (Assistente Administrativo) com aulas do YouTube, cronograma e revisões.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="nav" id="nav">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">CE</span>
+      <div>
+        <div class="brand-name">Edital CAU-TO</div>
+        <div class="brand-sub">Assistente Administrativo · 200</div>
+      </div>
+    </div>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="#painel" data-route="painel">Painel</a>
+      <a href="#edital" data-route="edital">Edital verticalizado</a>
+      <a href="#cronograma" data-route="cronograma">Cronograma</a>
+      <a href="#revisoes" data-route="revisoes">Revisões <span class="pill-count" id="navRevCount" hidden></span></a>
+      <a href="#ajustes" data-route="ajustes">Ajustes</a>
+    </nav>
+    <div class="nav-foot">
+      <div class="countdown" id="countdown"></div>
+      <div class="nav-progress">
+        <div class="bar"><span id="navBar"></span></div>
+        <div class="nav-progress-label"><span id="navPct">0%</span> do edital</div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main" id="main" tabindex="-1">
+    <section data-view="painel" hidden></section>
+    <section data-view="edital" hidden></section>
+    <section data-view="cronograma" hidden></section>
+    <section data-view="revisoes" hidden></section>
+    <section data-view="ajustes" hidden></section>
+  </main>
+</div>
+
+<!-- Detalhe do assunto -->
+<div class="sheet-backdrop" id="sheetBackdrop" hidden></div>
+<aside class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sheetTitle"></aside>
+
+<!-- Mini player -->
+<div class="player" id="player" hidden>
+  <div class="player-head">
+    <div class="player-info">
+      <div class="player-topic" id="playerTopic"></div>
+      <div class="player-title" id="playerTitle"></div>
+    </div>
+    <div class="player-actions">
+      <button class="icon-btn" id="pPrev" title="Vídeo anterior" aria-label="Vídeo anterior"><svg viewBox="0 0 24 24"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+      <button class="icon-btn" id="pPlay" title="Reproduzir ou pausar" aria-label="Reproduzir ou pausar"><svg viewBox="0 0 24 24" id="pPlayIcon"><path d="M8 5v14l11-7z"/></svg></button>
+      <button class="icon-btn" id="pNext" title="Próximo vídeo" aria-label="Próximo vídeo"><svg viewBox="0 0 24 24"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+      <button class="icon-btn" id="pExpand" title="Ampliar" aria-label="Ampliar"><svg viewBox="0 0 24 24"><path d="M4 4h6v2H6v4H4zm10 0h6v6h-2V6h-4zM4 14h2v4h4v2H4zm14 0h2v6h-6v-2h4z"/></svg></button>
+      <button class="icon-btn" id="pMin" title="Recolher" aria-label="Recolher"><svg viewBox="0 0 24 24"><path d="M5 11h14v2H5z"/></svg></button>
+      <button class="icon-btn" id="pClose" title="Fechar" aria-label="Fechar"><svg viewBox="0 0 24 24"><path d="M6.4 5 5 6.4 10.6 12 5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4 17.6 5 12 10.6z"/></svg></button>
+    </div>
+  </div>
+  <div class="player-body" id="playerBody">
+    <div class="player-frame"><div id="ytPlayer"></div><div class="player-msg" id="playerMsg" hidden></div></div>
+    <div class="player-queue" id="playerQueue"></div>
+  </div>
+  <div class="player-foot">
+    <div class="bar thin"><span id="playerWatch"></span></div>
+    <a id="playerYT" href="#" target="_blank" rel="noopener">Abrir no YouTube</a>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="js/edital.js"></script>
+<script src="js/videos.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
