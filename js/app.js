@@ -256,7 +256,7 @@
   }
 
   // ---------- telas ----------
-  const VIEWS = ["painel", "edital", "cronograma", "revisoes", "ajustes"];
+  const VIEWS = ["painel", "progresso", "edital", "cronograma", "revisoes", "ajustes"];
   function route() { const h = location.hash.replace("#", ""); return VIEWS.includes(h) ? h : "painel"; }
   const filters = { q: "", status: "", disc: "" };
 
@@ -266,7 +266,7 @@
     document.querySelectorAll("[data-view]").forEach(s => { s.hidden = s.dataset.view !== r; });
     document.querySelectorAll("[data-route]").forEach(a => a.classList.toggle("active", a.dataset.route === r));
     const el = document.querySelector(`[data-view="${r}"]`);
-    ({ painel: renderPainel, edital: renderEdital, cronograma: renderCronograma, revisoes: renderRevisoes, ajustes: renderAjustes })[r](el);
+    ({ painel: renderPainel, progresso: renderProgresso, edital: renderEdital, cronograma: renderCronograma, revisoes: renderRevisoes, ajustes: renderAjustes })[r](el);
     renderNav();
     if (openTopicId) renderSheet(openTopicId);
   }
@@ -336,31 +336,45 @@
       <div class="page-head"><div><h1>${fmtLong(today).replace(/^./, c => c.toUpperCase())}</h1>
         <p>${p.perDayLabel} assunto${p.perDay > 1 ? "s" : ""} novo${p.perDay > 1 ? "s" : ""} por dia de estudo para fechar o edital antes de ${fmt(state.settings.exam)}${p.reserveDays.length ? `, com ${p.reserveDays.length} dia${p.reserveDays.length > 1 ? "s" : ""} livre${p.reserveDays.length > 1 ? "s" : ""} no fim para revisão` : ""}.</p></div>
         <a class="btn" href="#cronograma">Ver cronograma</a></div>
-      <div class="grid two">
+      <div class="grid two even">
         <div class="card">
           <h2 class="section" style="margin-top:0">${studyLabel}</h2>
           ${studyList.length ? studyList.map(t => taskStudy(t, todayTopics.length ? today : nextDay)).join("") : '<div class="empty">Todos os assuntos do edital estão estudados.</div>'}
           ${doneToday.map(t => taskStudy(t, today)).join("")}
-          <h2 class="section">Revisões de hoje</h2>
+        </div>
+        <div class="card">
+          <h2 class="section" style="margin-top:0">Revisões de hoje</h2>
           ${revToday.length ? revToday.map(taskReview).join("") : '<div class="empty">Nenhuma revisão marcada para hoje.</div>'}
           ${revLate.length ? `<h2 class="section">Revisões atrasadas</h2>${revLate.map(taskReview).join("")}` : ""}
         </div>
-        <div class="grid" style="align-content:start">
-          <div class="card overall">
-            <div class="ring" style="--p:${o.pct}"><div><div><b class="num">${String(Math.round(o.pct))}%</b><small>do edital</small></div></div></div>
-            <div class="overall-text"><h3>Progresso geral</h3>
-              <div class="k-sub" style="color:var(--muted);font-size:13px">Ponderado pelos itens da prova: 40 básicos, 30 complementares e 50 específicos.</div>
-              <div class="counts"><span><b>${o.studied}</b> concluídos</span><span><b>${o.andamento}</b> em andamento</span><span><b>${o.nao_iniciado}</b> não iniciados</span><span><b>${o.revisao}</b> com revisão pendente</span></div>
-            </div>
-          </div>
-          <div class="card">
-            <h2 class="section" style="margin-top:0">Por disciplina</h2>
-            ${DISCS.map(d => { const s = discStats(d); return `<div class="disc-row"><span class="dot" style="--dc: var(${DISC_COLOR[d.id]})"></span>
-              <div style="min-width:0"><div class="name">${esc(d.nome)}</div><div class="meta">${s.studied} de ${s.total} assuntos · ${s.andamento} em andamento · ${d.bloco.nome.toLowerCase()}</div><div class="bar"><span style="width:${s.pct}%"></span></div></div>
-              <div class="pct">${s.pct}%</div></div>`; }).join("")}
-          </div>
-        </div>
       </div>`;
+  }
+
+  function renderProgresso(el) {
+    const o = overall();
+    const pctTxt = n => String(Math.round(n * 10) / 10).replace(".", ",");
+    el.innerHTML = `
+      <div class="page-head"><div><h1>Progresso</h1>
+        <p>Percentual do edital concluído, no geral e por disciplina. Contam como concluídos os assuntos marcados como concluído ou revisão pendente.</p></div></div>
+      <div class="grid kpis prog-kpis">
+        <div class="card kpi big"><div class="k-label">Edital concluído</div><div class="k-value num">${pctTxt(o.pct)}%</div><div class="bar"><span style="width:${o.pct}%"></span></div><div class="k-sub">Ponderado pelos itens da prova: 40 básicos, 30 complementares e 50 específicos.</div></div>
+        <div class="card kpi"><div class="k-label">Concluídos</div><div class="k-value num">${o.studied}<small> / ${o.total}</small></div></div>
+        <div class="card kpi"><div class="k-label">Em andamento</div><div class="k-value num">${o.andamento}</div></div>
+        <div class="card kpi"><div class="k-label">Não iniciados</div><div class="k-value num">${o.nao_iniciado}</div></div>
+        <div class="card kpi"><div class="k-label">Revisão pendente</div><div class="k-value num">${o.revisao}</div></div>
+      </div>
+      ${EDITAL.blocos.map(b => {
+        const ds = DISCS.filter(d => d.bloco === b);
+        return `<h2 class="section">${esc(b.nome)} <span style="color:var(--muted);font-weight:400">· ${b.itens} itens na prova</span></h2>
+        <div class="grid disc-cards">${ds.map(d => { const st = discStats(d); return `
+          <div class="card disc-card" style="--dc: var(${DISC_COLOR[d.id]})">
+            <div class="dc-top"><span class="dot"></span><h3>${esc(d.nome)}</h3></div>
+            <div class="dc-pct num">${st.pct}%</div>
+            <div class="bar"><span style="width:${st.pct}%"></span></div>
+            <div class="counts"><span><b>${st.studied}</b> de ${st.total} concluídos</span><span><b>${st.andamento}</b> em andamento</span><span><b>${st.nao_iniciado}</b> não iniciados</span><span><b>${st.revisao}</b> com revisão pendente</span></div>
+            <a class="btn small" href="#edital" data-filter-disc="${d.id}">Ver assuntos</a>
+          </div>`; }).join("")}</div>`;
+      }).join("")}`;
   }
 
   function renderEdital(el) {
@@ -714,6 +728,8 @@
     if (p) { play(p.dataset.play, p.dataset.kind, Number(p.dataset.idx)); return; }
     const o = ev.target.closest("[data-open]");
     if (o) { openSheet(o.dataset.open); return; }
+    const f = ev.target.closest("[data-filter-disc]");
+    if (f) { filters.disc = f.dataset.filterDisc; filters.status = ""; filters.q = ""; }
     const r = ev.target.closest("[data-review]");
     if (r) { toggleReview(r.dataset.review, Number(r.dataset.i)); return; }
   });
