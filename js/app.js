@@ -334,8 +334,7 @@
     const studyLabel = todayTopics.length ? "Para estudar hoje" : (nextDay ? `Próximo dia de estudo: ${fmtLong(nextDay)}` : "Nada a estudar");
     el.innerHTML = `
       <div class="page-head"><div><h1>${fmtLong(today).replace(/^./, c => c.toUpperCase())}</h1>
-        <p>${p.perDayLabel} assunto${p.perDay > 1 ? "s" : ""} novo${p.perDay > 1 ? "s" : ""} por dia de estudo para fechar o edital antes de ${fmt(state.settings.exam)}${p.reserveDays.length ? `, com ${p.reserveDays.length} dia${p.reserveDays.length > 1 ? "s" : ""} livre${p.reserveDays.length > 1 ? "s" : ""} no fim para revisão` : ""}.</p></div>
-        <a class="btn" href="#cronograma">Ver cronograma</a></div>
+        <p>${p.perDayLabel} assunto${p.perDay > 1 ? "s" : ""} novo${p.perDay > 1 ? "s" : ""} por dia de estudo para fechar o edital antes de ${fmt(state.settings.exam)}${p.reserveDays.length ? `, com ${p.reserveDays.length} dia${p.reserveDays.length > 1 ? "s" : ""} livre${p.reserveDays.length > 1 ? "s" : ""} no fim para revisão` : ""}.</p></div></div>
       <div class="grid two even">
         <div class="card">
           <h2 class="section" style="margin-top:0">${studyLabel}</h2>
