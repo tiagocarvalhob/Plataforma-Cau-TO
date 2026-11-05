@@ -589,7 +589,7 @@
   }
 
   // ---------- mini player ----------
-  const P = { yt: null, ready: false, apiFailed: false, queue: [], idx: 0, topic: null, kind: "aulas", expanded: false, timer: null, pending: null };
+  const P = { sumOpen: window.innerWidth > 1300, yt: null, ready: false, apiFailed: false, queue: [], idx: 0, topic: null, kind: "aulas", expanded: false, timer: null, pending: null };
   window.onYouTubeIframeAPIReady = function () {
     P.yt = new YT.Player("ytPlayer", {
       host: "https://www.youtube-nocookie.com",
@@ -617,6 +617,7 @@
     if (!window.YT || !window.YT.Player) loadApi();
     if (statusOf(t.id) === "nao_iniciado" && kind === "aulas") { state.topics[t.id] = { ...(state.topics[t.id] || {}), status: "andamento", updatedAt: new Date().toISOString() }; save(); render(); toast("Assunto marcado como em andamento."); }
     loadEntry(list[idx]);
+    syncSum();
   }
   function loadEntry(e) {
     showMsg(null);
@@ -678,6 +679,34 @@
   }
   function showMsg(html) { const m = $("#playerMsg"); if (!html) { m.hidden = true; return; } m.innerHTML = html; m.hidden = false; }
   const ytUrl = e => e.playlist ? `https://www.youtube.com/playlist?list=${e.playlist}` : `https://www.youtube.com/watch?v=${e.video}`;
+  // ---------- resumo do assunto, ao lado do mini player ----------
+  function sumHtml(t) {
+    const s = (window.RESUMOS || {})[t.id];
+    if (!s) return "";
+    const ul = a => `<ul>${a.map(x => `<li>${x}</li>`).join("")}</ul>`;
+    return `<div class="sum-sec"><div class="sum-h">Pontos principais</div>${ul(s.r)}</div>
+      <div class="sum-sec"><div class="sum-h">Como a Quadrix cobra</div>${ul(s.q)}</div>
+      <p class="sum-note">Resumo de referência da plataforma, feito a partir do estilo de cobrança da Quadrix. Para legislação, confira sempre o texto da lei.</p>`;
+  }
+  function syncSum() {
+    const box = $("#playerSum"), pl = $("#player"), t = P.topic;
+    const has = !!(t && (window.RESUMOS || {})[t.id]);
+    $("#pSum").hidden = !has;
+    $("#pSum").setAttribute("aria-pressed", String(P.sumOpen));
+    $("#pSum").classList.toggle("on", P.sumOpen);
+    const show = has && P.sumOpen && !pl.hidden && !pl.classList.contains("minimized") && !P.expanded;
+    if (has && box.dataset.topic !== t.id) {
+      box.dataset.topic = t.id;
+      $("#sumTopic").textContent = `Resumo · ${t.disc.nome} ${t.n}`;
+      $("#sumTitle").textContent = t.t;
+      $("#sumBody").innerHTML = sumHtml(t);
+      $("#sumBody").scrollTop = 0;
+    }
+    box.hidden = !show;
+    if (show) document.documentElement.style.setProperty("--player-h", pl.offsetHeight + "px");
+  }
+  window.addEventListener("resize", () => { if (!$("#playerSum").hidden) syncSum(); });
+
   function updatePlayerUi() {
     const e = P.queue[P.idx]; if (!e || !P.topic) return;
     $("#playerTopic").textContent = `${P.kind === "questoes" ? "Questões · " : ""}${P.topic.disc.nome} ${P.topic.n}`;
@@ -685,7 +714,8 @@
     if (e.playlist && P.ready) { try { const i = P.yt.getPlaylistIndex(); const n = (P.yt.getPlaylist() || []).length; if (n) title += ` (vídeo ${i + 1} de ${n})`; } catch (x) { } }
     $("#playerTitle").textContent = title;
     $("#playerYT").href = ytUrl(e);
-    $("#playerQueue").innerHTML = `<div class="grp-title" style="border-top:0">${P.kind === "questoes" ? "Vídeos de questões" : "Aulas"} do assunto</div>` + P.queue.map((q, i) =>
+    const sh = sumHtml(P.topic);
+    $("#playerQueue").innerHTML = (sh ? `<details class="sum-inline" open><summary>Resumo do assunto</summary><div class="sum-body">${sh}</div></details>` : "") + `<div class="grp-title"${sh ? "" : ' style="border-top:0"'}>${P.kind === "questoes" ? "Vídeos de questões" : "Aulas"} do assunto</div>` + P.queue.map((q, i) =>
       `<button class="q-item${i === P.idx ? " active" : ""}" data-q="${i}">${esc(q.titulo)}<small>${q.playlist ? "playlist · " : ""}${esc(q.canal || "")}</small></button>`).join("");
     updateWatchBar();
   }
@@ -707,13 +737,16 @@
     if (on && !bd) { bd = document.createElement("div"); bd.id = "playerBackdrop"; bd.className = "player-backdrop"; bd.addEventListener("click", () => setExpanded(false)); document.body.appendChild(bd); }
     if (!on && bd) bd.remove();
     $("#pExpand").title = on ? "Reduzir" : "Ampliar";
+    syncSum();
   }
   $("#pPlay").addEventListener("click", () => { if (!P.ready) return; const s = P.yt.getPlayerState(); if (s === 1) P.yt.pauseVideo(); else P.yt.playVideo(); });
   $("#pPrev").addEventListener("click", () => step(-1));
   $("#pNext").addEventListener("click", () => step(1));
   $("#pExpand").addEventListener("click", () => { $("#player").classList.remove("minimized"); setExpanded(!P.expanded); });
-  $("#pMin").addEventListener("click", () => { setExpanded(false); $("#player").classList.toggle("minimized"); });
-  $("#pClose").addEventListener("click", () => { track(); try { P.yt && P.yt.stopVideo(); } catch (e) { } setExpanded(false); $("#player").hidden = true; render(); });
+  $("#pMin").addEventListener("click", () => { setExpanded(false); $("#player").classList.toggle("minimized"); syncSum(); });
+  $("#pSum").addEventListener("click", () => { P.sumOpen = !P.sumOpen; if (P.expanded) { const d = document.querySelector(".sum-inline"); if (d) d.open = true; } syncSum(); });
+  $("#sumClose").addEventListener("click", () => { P.sumOpen = false; syncSum(); });
+  $("#pClose").addEventListener("click", () => { track(); try { P.yt && P.yt.stopVideo(); } catch (e) { } setExpanded(false); $("#player").hidden = true; syncSum(); render(); });
   $("#playerQueue").addEventListener("click", ev => { const b = ev.target.closest("[data-q]"); if (b) { P.idx = Number(b.dataset.q); loadEntry(P.queue[P.idx]); } });
 
   // ---------- eventos globais ----------
