@@ -65,7 +65,9 @@
       days: [1, 2, 3, 4, 5, 6],
       intervals: [1, 7, 15, 30],
       maxHard: 1,
-      reserveDays: 2
+      reserveDays: 2,
+      basicFirst: true,       // básicas primeiro (Tiago, 05/11/2026: vestibular em 22/11)
+      basicUntil: "2026-11-21"
     }
   });
   let state = load();
@@ -182,23 +184,33 @@
     const doneToday = TOPICS.filter(t => studied(t.id) && state.topics[t.id].studiedAt === today);
     const perDay = Math.max(1, Math.ceil((seq.length + doneToday.length) / contentDays.length));
     const plan = {};
-    const pool = seq.slice();
-    contentDays.forEach((day, di) => {
-      if (!pool.length) return;
-      const picked = [];
-      const already = day === today ? doneToday.length : 0;
-      // cota do dia: o que falta dividido pelos dias que restam, para espalhar por igual até a prova
-      const quota = Math.ceil((pool.length + already) / (contentDays.length - di));
-      while (picked.length + already < quota && pool.length) {
-        const hard = picked.filter(t => t.c === 3).length;
-        let idx = pool.findIndex(t => (t.c < 3 || hard < state.settings.maxHard) && !picked.some(p => p.disc === t.disc));
-        if (idx < 0) idx = pool.findIndex(t => t.c < 3 || hard < state.settings.maxHard);
-        if (idx < 0) idx = 0;
-        picked.push(pool.splice(idx, 1)[0]);
-      }
-      if (picked.length) plan[day] = picked;
-    });
-    if (pool.length) { const last = contentDays[contentDays.length - 1]; plan[last] = (plan[last] || []).concat(pool); }
+    const fill = (dayList, pool) => {
+      dayList.forEach((day, di) => {
+        if (!pool.length) return;
+        const picked = [];
+        const already = day === today ? doneToday.length : 0;
+        // cota do dia: o que falta dividido pelos dias que restam, para espalhar por igual
+        const quota = Math.ceil((pool.length + already) / (dayList.length - di));
+        while (picked.length + already < quota && pool.length) {
+          const hard = picked.filter(t => t.c === 3).length;
+          let idx = pool.findIndex(t => (t.c < 3 || hard < state.settings.maxHard) && !picked.some(p => p.disc === t.disc));
+          if (idx < 0) idx = pool.findIndex(t => t.c < 3 || hard < state.settings.maxHard);
+          if (idx < 0) idx = 0;
+          picked.push(pool.splice(idx, 1)[0]);
+        }
+        if (picked.length) plan[day] = picked;
+      });
+      if (pool.length && dayList.length) { const last = dayList[dayList.length - 1]; plan[last] = (plan[last] || []).concat(pool); }
+    };
+    // fase 1 opcional: só as matérias básicas até a data escolhida; depois, o restante
+    const until = state.settings.basicFirst ? state.settings.basicUntil : "";
+    const basics = seq.filter(t => t.disc.bloco.id === "B"), others = seq.filter(t => t.disc.bloco.id !== "B");
+    const d1 = until ? contentDays.filter(d => d <= until) : [];
+    const d2 = contentDays.filter(d => !d1.includes(d));
+    const phase = d1.length && basics.length && d2.length ? { until, basics: basics.length } : null;
+    if (d1.length && basics.length && d2.length) { fill(d1, basics); fill(d2, others); }
+    else if (d1.length && basics.length) { fill(d1, basics.concat(others)); }
+    else fill(contentDays, seq.slice());
     // guarda a primeira data planejada de cada assunto para mostrar quando foi reagendado
     let changed = false;
     Object.entries(plan).forEach(([day, list]) => list.forEach(t => {
@@ -208,7 +220,7 @@
     const counts = Object.values(plan).map(l => l.length);
     const lo = counts.length ? Math.min(...counts) : 0, hi = counts.length ? Math.max(...counts) : 0;
     const perDayLabel = lo === hi ? String(hi) : `${lo} a ${hi}`;
-    planCache = { plan, perDay, perDayLabel, days, contentDays, reserveDays: days.slice(contentDays.length) };
+    planCache = { plan, perDay, perDayLabel, phase, days, contentDays, reserveDays: days.slice(contentDays.length) };
     return planCache;
   }
   function dateOfTopic(id) {
@@ -456,7 +468,7 @@
     const cw = weekStart(today);
     el.innerHTML = `
       <div class="page-head"><div><h1>Cronograma</h1>
-        <p>Montado sozinho a partir dos assuntos que faltam: ${p.perDayLabel} por dia de estudo, no máximo ${state.settings.maxHard} assunto pesado por dia e disciplinas alternadas. Ele se refaz a cada mudança de status; o que você já concluiu fica registrado no dia em que foi estudado.</p></div>
+        <p>Montado sozinho a partir dos assuntos que faltam: ${p.perDayLabel} por dia de estudo,${p.phase ? ` com Português, Raciocínio Lógico e Matemática e Informática primeiro, até ${fmt(p.phase.until)}, e as demais matérias depois,` : ""} no máximo ${state.settings.maxHard} assunto pesado por dia e disciplinas alternadas. Ele se refaz a cada mudança de status; o que você já concluiu fica registrado no dia em que foi estudado.</p></div>
         <a class="btn" href="#ajustes">Dias e intervalos</a></div>
       ${weeks.filter(w => w.days.length).map((w, i) => `
         <div class="week${w.start === cw ? " current" : ""}">
@@ -506,6 +518,7 @@
           <div class="hint">Padrão: 1, 7, 15 e 30 dias. <button class="btn small" id="addInt" type="button">Adicionar revisão</button> <button class="btn small" id="rmInt" type="button">Remover a última</button></div></div>
         <div class="field"><label for="sHard">Assuntos pesados por dia</label><input type="number" id="sHard" min="1" max="5" value="${s.maxHard}"><div class="hint">Assuntos marcados como pesados: sintaxe, concordância, regência, equações, contagem, probabilidade, proposições, planilhas, improbidade, processo administrativo, Lei 12.378, administração financeira, de pessoas e de materiais, e redação oficial.</div></div>
         <div class="field"><label for="sReserve">Dias livres antes da prova</label><input type="number" id="sReserve" min="0" max="10" value="${s.reserveDays}"><div class="hint">Últimos dias de estudo sem assunto novo, só para revisão.</div></div>
+        <div class="field"><label><input type="checkbox" id="sBasicOn"${s.basicFirst ? " checked" : ""}> Matérias básicas primeiro, até</label><input type="date" id="sBasic" value="${s.basicUntil || ""}"${s.basicFirst ? "" : " disabled"}><div class="hint">Português, Raciocínio Lógico e Matemática e Informática ficam todas antes dessa data; as outras matérias vêm depois.</div></div>
       </div></div>
       <h2 class="section">Seu progresso</h2>
       <div class="card"><p style="margin-top:0">O progresso fica salvo neste navegador. Para levar para outro aparelho, exporte aqui e importe lá.</p>
@@ -531,6 +544,8 @@
     $("#addInt", el).addEventListener("click", () => { s.intervals.push((s.intervals[s.intervals.length - 1] || 30) + 30); commit(); });
     $("#rmInt", el).addEventListener("click", () => { if (s.intervals.length > 1) { s.intervals.pop(); commit(); } });
     $("#sHard", el).addEventListener("change", e => { s.maxHard = Math.max(1, Number(e.target.value) || 1); commit(); });
+    $("#sBasicOn", el).addEventListener("change", e => { s.basicFirst = e.target.checked; commit(); });
+    $("#sBasic", el).addEventListener("change", e => { s.basicUntil = e.target.value; commit(); });
     $("#sReserve", el).addEventListener("change", e => { s.reserveDays = Math.max(0, Number(e.target.value) || 0); commit(); });
     $("#exp", el).addEventListener("click", () => {
       const blob = new Blob([JSON.stringify(state, null, 1)], { type: "application/json" });
